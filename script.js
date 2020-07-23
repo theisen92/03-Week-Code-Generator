@@ -5,7 +5,6 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
@@ -14,7 +13,6 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   // Prompt for password length
-
   function passQLength() {
     var passLength = prompt(
       "How long do you want password (the password must be 8-128 characters long)?"
@@ -22,11 +20,12 @@ function generatePassword() {
 
     passLength = parseInt(passLength, 10);
 
-    if (passLength < 8 || passLength > 128) {
+    if (passLength > 8 && passLength < 128) {
+      return passLength;
+    } else {
       alert("Your password must be 8-128 characters long");
-      passQLength();
+      return passQLength();
     }
-    return passLength;
   }
 
   passLength = passQLength();
@@ -150,7 +149,7 @@ function generatePassword() {
       passNum === false
     ) {
       alert("Your password must one of the options selected");
-      passQInclude();
+      return passQInclude();
     }
     return passArr;
   }
