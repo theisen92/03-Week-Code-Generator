@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# Password Generator
 
-You can use the [editor on GitHub](https://github.com/theisen92/03-Week-Homework/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Live site:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+https://theisen92.github.io/03-Week-Homework/
 
-### Markdown
+## Usage
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+It could be used to generate a random secure password. This homework helped me practice how to use functions and arrays within javascript.
 
-```markdown
-Syntax highlighted code block
+## Credits
 
-# Header 1
-## Header 2
-### Header 3
+I primarily used the information from class activities and MDN Developer for resources. Then Also looked up some examples of functions and loops on full stack
 
-- Bulleted
-- List
+## Contributing
 
-1. Numbered
-2. List
+I worked on the project alone but I did have some help from the Instructor Nate and TA Johnny.
 
-**Bold** and _Italic_ and `Code` text
+## Challenges
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/theisen92/03-Week-Homework/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The main challenge that I was running into during this project was the re-initiating prompts when the values were not following the guidelines.
+At first I tried a while loop but that wasn't the best fit in this application, so Johnny suggested instead using functions.
+After switching over the prompts/confirms to functions I kept running into the error where it would return the value as undefined when not following the guidelines
+Nate took a look and noticed that I had a return on the desired value but not on the function if they made a wrong choice.
